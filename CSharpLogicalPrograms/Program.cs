@@ -13,7 +13,7 @@ namespace CSharpLogicalPrograms
             Console.WriteLine("Welcome to C# logical Programs");
 
             Console.WriteLine("Enter the option to perform perticular program");
-            Console.WriteLine("1. Fibonacci Series");
+            Console.WriteLine("1. Fibonacci Series \n2. Perfect Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -22,6 +22,10 @@ namespace CSharpLogicalPrograms
                     int term= Convert.ToInt32(Console.ReadLine());
                     Fibonacci fibonacci = new Fibonacci();
                     fibonacci.FibonacciSerirs(term);
+                    break;
+                case 2:
+                    PerfectNumber perfect= new PerfectNumber();
+                    perfect.CheckPerfectNumber();
                     break;
                 default:
                     Console.WriteLine("Enter the correct option");
