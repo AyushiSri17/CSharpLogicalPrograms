@@ -13,7 +13,7 @@ namespace CSharpLogicalPrograms
             Console.WriteLine("Welcome to C# logical Programs");
 
             Console.WriteLine("Enter the option to perform perticular program");
-            Console.WriteLine("1. Fibonacci Series \n2. Perfect Number \n3. Prime Number \n4. Reverse Number \n5.Coupon Number");
+            Console.WriteLine("1. Fibonacci Series \n2. Perfect Number \n3. Prime Number \n4. Reverse Number \n5. Coupon Number \n6. Stop Watch");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -38,6 +38,10 @@ namespace CSharpLogicalPrograms
                 case 5:
                     CouponNumber coupon= new CouponNumber();
                     coupon.Coupon();
+                    break;
+                case 6:
+                    StopWatch stopWatch = new StopWatch();
+                    stopWatch.GetTime();
                     break;
                 default:
                     Console.WriteLine("Enter the correct option");
